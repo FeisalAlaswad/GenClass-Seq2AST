@@ -1,0 +1,55 @@
+start: record
+
+record: "[AST:SEG]" content "[/AST:SEG]"
+
+content: (class_declaration+ | attribute+ | method+ | relationship+ )?
+
+
+class_declaration: "[CLASS]" class_name  "[/CLASS]"
+
+relationship: relationship_declaration
+            | extension_declaration
+            | aggregation_declaration
+            | composition_declaration
+            | dependency_declaration
+
+attribute: "[ATTRIBUTE]" modifier attribute_name type_declaration "[/ATTRIBUTE]"
+
+method: "[METHOD]" modifier method_name parameter* type_declaration "[/METHOD]"
+
+modifier: "[PUBLIC]" | "[PRIVATE]" | "[PROTECTED]" | "[PACKAGE]"
+
+type_declaration: "[TYPE]" type_name
+
+parameter: "[PARAM]" param_name "[PARAMTYPE]" type_name
+
+relationship_declaration: "[RELATION]" class_name multiplicity? multiplicity? class_name label "[/RELATION]"
+extension_declaration: "[EXTENSION]" class_name "[ONE]" "[ONE]" class_name label "[/EXTENSION]"
+aggregation_declaration: "[AGGREGATION]" class_name multiplicity? multiplicity? class_name label "[/AGGREGATION]"
+composition_declaration: "[COMPOSITION]" class_name multiplicity? multiplicity? class_name label "[/COMPOSITION]"
+dependency_declaration: "[DEPENDENCY]" class_name multiplicity? multiplicity? class_name label "[/DEPENDENCY]"
+
+multiplicity: "[ONE]" | "[MANY]" | "[ZOO]" | "[MOM]" | "[OOM]"
+
+label: "[LABEL]" label_text
+
+class_name: /[A-Z][A-Za-z0-9]+/
+attribute_name: /[a-z]+(?:[A-Z][a-z0-9]*)*/
+method_name: /[a-z][a-zA-Z0-9]*\([^)]*\)/
+param_name: /[A-Za-z][A-Za-z0-9]*/
+type_name: collection_type | /[a-zA-Z][a-zA-Z0-9]*/
+
+
+primitive_type: "string" | "int" | "float" | "boolean" | "Date" | "DateTime" | "double"
+
+collection_type: "List" "<" type_name ">"
+
+identifier: IDENTIFIER
+label_text: /[a-z]+(?:[A-Z][a-z0-9]*)*/ | "[NOLABEL]"
+
+
+%import common.WS
+%import common.ESCAPED_STRING
+LABELTEXT: /[a-z0-9 _.-]+/
+IDENTIFIER: /[a-z0-9 _.-]+/
+%ignore WS
