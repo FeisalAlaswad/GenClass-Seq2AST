@@ -42,7 +42,7 @@ If you use this work or dataset in academic research, please cite it as follows:
 Not yet....
 ```bibtex
 @article{alaswad2025neural,
-  title={Towards AI-Driven Software Design: Generating UML Class Diagrams with NLP Transformers},
+  title={Automating UML Class Diagram Generation from Natural Language via Transformer-Based Structured Translation},
   author={Alaswad, Feisal and Eswaran, Poovammal},
   journal={-},
   volume={-},
