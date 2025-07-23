@@ -16,9 +16,9 @@ Transformer-based approach for automated generation of UML class diagrams from n
 | Metric         | Seq2Seq | Seq2AST (Enhanced) |
 |----------------|---------|--------------------|
 | BLEU-4         | 38.67   | 56.38              |
-| Recall (%)     | 74.16   | 92.31              |
-| Precision (%)  | 68.21   | 87.64              |
-| F1-Score (%)   | 71.02   | 89.90              |
+| Recall (%)     | -   | 92.31              |
+| Precision (%)  | -   | 87.64              |
+| F1-Score (%)   | -   | 89.90              |
 
 ## Installation
 ```bash
