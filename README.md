@@ -41,14 +41,17 @@ pip install -r requirements.txt
 If you use this work or dataset in academic research, please cite it as follows:
 Not yet....
 ```bibtex
-@article{alaswad2025neural,
-  title={Automating UML Class Diagram Generation from Natural Language via Transformer-Based Structured Translation},
-  author={Alaswad, Feisal and Eswaran, Poovammal},
-  journal={-},
-  volume={-},
-  number={-},
-  year={2025}
+@article{Alaswad_TransformerUML,
+  title   = {Transformer-Based Structured Translation for Automated UML Class Diagram Generation from Natural Language},
+  author  = {Alaswad, Feisal and Poovammal, E. and Ramana, Kadiyala and Narayana, Surya G. and Singh, Saurabh and Ra, In-Ho},
+  journal = {IEEE Access},
+  year    = {20XX},
+  volume  = {XX},
+  number  = {XX},
+  pages   = {XX--XX},
+  doi     = {10.XXXX/XXXXXX}
 }
+
 ```
 
 ## License
