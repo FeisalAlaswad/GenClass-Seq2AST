@@ -43,7 +43,7 @@ Not yet....
 ```bibtex
 @article{Alaswad_TransformerUML,
   title   = {Transformer-Based Structured Translation for Automated UML Class Diagram Generation from Natural Language},
-  author  = {Alaswad, Feisal and Poovammal, E. and Ramana, Kadiyala and Narayana, Surya G. and Singh, Saurabh and Ra, In-Ho},
+  author  = {Alaswad, Feisal and Poovammal, E.},
   journal = {IEEE Access},
   year    = {20XX},
   volume  = {XX},
