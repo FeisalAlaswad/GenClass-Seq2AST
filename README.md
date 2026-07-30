@@ -4,6 +4,23 @@
 
 Transformer-based approach for automated generation of UML class diagrams from natural language requirements.
 
+
+## Citation
+If you use this work or dataset in academic research, please cite it as follows:
+Not yet....
+```bibtex
+@article{alaswad2026ast,
+  title={AST-guided transformers for sustainable and reliable UML modeling},
+  author={Alaswad, Feisal and Poovammal, E and Aljaddouh, Batoul and Ramana, Kadiyala and Khan, Arfat Ahmad and Kryvinska, Natalia},
+  journal={Machine Learning with Applications},
+  pages={100940},
+  year={2026},
+  publisher={Elsevier}
+}
+
+```
+
+
 ## Key Features
 - **Seq2Seq Model**: Direct PlantUML code generation
 - **Seq2AST Model**: Syntax-valid diagram generation via Abstract Syntax Trees
@@ -37,22 +54,7 @@ pip install -r requirements.txt
 
 
 
-## Citation
-If you use this work or dataset in academic research, please cite it as follows:
-Not yet....
-```bibtex
-@article{Alaswad_TransformerUML,
-  title   = {Transformer-Based Structured Translation for Automated UML Class Diagram Generation from Natural Language},
-  author  = {Alaswad, Feisal and Poovammal, E.},
-  journal = {IEEE Access},
-  year    = {20XX},
-  volume  = {XX},
-  number  = {XX},
-  pages   = {XX--XX},
-  doi     = {10.XXXX/XXXXXX}
-}
 
-```
 
 ## License
 MIT License
